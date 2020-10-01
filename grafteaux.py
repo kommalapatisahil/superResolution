@@ -491,7 +491,7 @@ def Uinf():
 #load the initial data;
 #---------------------------------------------------------------------------------------
 
-def init_data():
+def init_data(mat_path = "C:/Users/Kommalapati sahil/Desktop/owen"):
     """
     used to load initial data to begin the simulations. 
     returns X, Y, U, V, Swirl, Cond,Prof 
@@ -504,25 +504,17 @@ def init_data():
     import PIVutils
     import PODutils
 
-    loadFolder = "C:/Users/Kommalapati sahil/Desktop/owen/data/"
-
-    saveFile = 'RNV45-thumbs-unified-BBauto2x.hdf5'
-    imgFolder = loadFolder + saveFile[:-5]
-
+    import os
+    import sys 
+    
     noEdge = True
     interpVecs = True
 
-    import os
-    if not os.path.exists(imgFolder):
-        os.makedirs(imgFolder)
-
-    #check 
-    import sys
     print("current path :", sys.executable)
 
 
     
-    X, Y, U, V, Swirl, Cond, Prof = PIVutils.loadDataset("C:/Users/Kommalapati sahil/Desktop/owen/"+'/RNV45-RI2.mat',\
+    X, Y, U, V, Swirl, Cond, Prof = PIVutils.loadDataset(mat_path + "/RNV45-RI2.mat",\
                                                          ['X','Y','U','V','Swirl'],['Cond','Prof'],matlabData = True)
     
     #print("Uinf", Cond["Uinf"][0][0])
