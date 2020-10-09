@@ -1,12 +1,13 @@
 # superResolution
-ML for super-resolution in turbulent boundary layer data
 
-Files
+Machine Learning for super-resolution in turbulent boundary layer data. 
 
-PIVutils.py, PODutils.py, grafteaux.py - utility functions containing modules.
+~Files Index~
 
-SuperResolution_ANNs_ModelV1.ipynb - Complete work flow: Loads data, converts to low resolution images, trains using Keras, analyze errors and plot a few test cases.
+**PIVutils.py, PODutils.py, grafteaux.py** - Modules containing utility functions. 
 
-SuperResolution_ANNs.ipynb - Complete work flow: beta version
+**SuperResolution_ANNs_ModelV1.ipynb** - Complete work flow: Loads data, converts to low resolution images, trains using Keras, analyze errors and plot a few test cases.
 
-SuperResolution-wHyperTuning.ipynb - Uses Keras-tuner to obtain optimal hyperparameters.
+**SuperResolution_ANNs.ipynb** - Complete work flow: beta version
+
+**SuperResolution-wHyperTuning.ipynb** - Uses Keras-tuner to obtain optimal hyperparameters.
