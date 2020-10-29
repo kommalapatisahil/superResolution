@@ -2,6 +2,8 @@
 
 Machine Learning for super-resolution in turbulent boundary layer data. 
 
+![](https://github.com/kommalapatisahil/superResolution/blob/main/introSR.png)
+
 Contents of the repository. 
 
 ## Notebooks
